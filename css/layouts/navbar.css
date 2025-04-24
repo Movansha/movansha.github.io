@@ -1,0 +1,100 @@
+.navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-inline: 13px;
+}
+
+/* Navbar contents: */
+
+#navbar-logo > img {
+    margin: 11px;
+    width: 1.9rem;
+}
+
+#navbar-header {
+    padding-inline: 15px;
+    padding-bottom: 8px;
+}
+
+#hamburger {
+    cursor: pointer;
+}
+
+#hamburger > img {
+    display: block;
+
+    margin: 11px;
+    width: 1.9rem;
+}
+
+/* Menu: */
+
+.navbar > hr {
+    display: none;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    top: 110%;
+    right: 1%;
+    
+    padding: 3px;
+    
+    position: absolute;
+    z-index: 1;
+}
+
+#menu > a {
+    display: block;
+
+    margin: 2px;
+    padding-inline: 50px;
+    padding-block: 20px;
+}
+
+/* Responsive design: */
+
+@media (min-width: 875px) {
+    #navbar-header {
+        flex: 1;
+        padding-bottom: 0px;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    .navbar > hr {
+        display: inline-block;
+
+        width: 5%;
+        margin: 0px;
+    }
+
+    #menu {
+        flex-direction: row;
+        
+        top: 0%;
+        right: 1%;
+
+        margin-block: 5px;
+        padding: 3px;
+
+        position: relative;
+    }
+
+    #menu > a {
+        margin: 0px;
+
+        padding-inline: 20px;
+        padding-block: 13px;
+    }
+}

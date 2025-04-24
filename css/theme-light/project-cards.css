@@ -1,0 +1,50 @@
+.projects-container > a {
+    text-decoration: none;
+
+    background-color: #e9e9e9;
+    color: #303030;
+
+    border: 2px solid #d9d2df;
+    border-radius: 22px;
+
+    box-shadow: 0 0 5px #00000010;
+
+    transition: box-shadow 600ms ease;
+    transition: border-color 600ms ease;
+}
+
+/* Content: */
+
+.projects-container > a > h1 {
+    text-align: center;
+
+    font-family: "Albert Sans Medium";
+    font-weight: normal;
+    font-size: 1.2rem;
+
+    transition: color 175ms ease;
+}
+
+.projects-container > a > p {
+    text-align: center;
+}
+
+@media (pointer: fine) {
+    .projects-container > a:hover {
+        background-color: #eaeaea;
+        border-color: #b5afcc;
+        
+        box-shadow: 0px 0px 15px #1e004144;
+
+        transition: box-shadow 600ms ease;
+        transition: border-color 600ms ease;
+    }
+
+    .projects-container > a:hover > h1 {
+        color: #604bb3;
+    }
+}
+
+.projects-container > a:active {
+    border-color: #8b60a8;
+}

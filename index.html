@@ -1,0 +1,139 @@
+<!-- The files in this project have not minifed. -->
+
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO: -->
+
+    <link rel="icon" href="images/favicon.ico">
+    <title>Movansha - Kişisel web sitesi</title>
+
+    <meta name="keywords" content="movansha, developer, github, projects, software">
+    <meta name="author" content="Batuhan D.">
+
+    <!-- Open Graph-->
+
+    <meta property="og:image" content="https://movansha.com.tr/images/og-image.jpg">
+    <meta property="og:url" content="https://movansha.com.tr">
+
+    <meta property="og:title" content="Movansha - Kişisel web sitesi">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card-->
+
+    <meta name="twitter:image" content="https://movansha.com.tr/images/og-image.jpg">
+    
+    <meta name="twitter:title" content="Movansha - Kişisel web sitesi">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Design: -->
+
+    <link rel="stylesheet" href="css/fonts.css">
+
+    <!-- Layouts: -->
+
+    <link rel="stylesheet" href="css/layouts/navbar.css">
+    <link rel="stylesheet" href="css/layouts/general.css">
+    
+    <link rel="stylesheet" href="css/layouts/project-cards.css">
+    <link rel="stylesheet" href="css/layouts/about-me.css">
+
+    <link rel="stylesheet" href="css/layouts/footer.css">
+
+    <!-- Light theme: -->
+
+    <link rel="stylesheet" href="css/theme-light/navbar.css">
+    <link rel="stylesheet" href="css/theme-light/general.css">
+
+    <link rel="stylesheet" href="css/theme-light/project-cards.css">
+    <link rel="stylesheet" href="css/theme-light/about-me.css">
+    
+    <link rel="stylesheet" href="css/theme-light/footer.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a id="navbar-logo" href="#about-me">
+            <img src="images/navbar/logo-white.webp" alt="Movansha logosu">
+        </a>
+
+        <h1 id="navbar-header">
+            Movansha
+        </h1>
+        
+        <button id="hamburger" title="Menü">
+            <img src="images/navbar/hamburger.webp" alt="Menü simgesi">
+        </button>
+        
+        <!---->
+        
+        <hr>
+
+        <div id="menu">
+            <a href="#my-projects">Projelerim</a>
+            <a href="#about-me">Hakkımda</a>
+
+            <a href="https://github.com/Movansha">GitHub Profili</a>
+        </div>
+
+        <script src="js/navbar.js"></script>
+    </nav>
+
+    <!-- ++++++++++ -->
+    
+    <div class="main-container projects-container" id="my-projects">
+        <h1>Projelerim</h1>
+
+        <script src="js/load-projects.js"></script>
+    </div>
+
+    <!-- ++++++++++ -->
+
+    <div class="main-container about-me-container" id="about-me">
+        <h1>Hakkımda :</h1>
+
+        <div id="profile">
+            <a href="images/movansha.jpg" target="_blank"> <img src="images/movansha.jpg"> </a>
+            <p> Batuhan D. </p>
+        </div>
+
+        <div id="line"></div>
+
+        <div id="description">
+            <p>
+                Hoş geldiniz. Adım <b>Batuhan</b>. 11 yaşımdan beridir işletim sistemlerine, donanımlara vesaire ilgi duyup kurcalarken güncel olarak
+                yazılım dilleri öğreniyor ve çeşitli projeler geliştirmeye çalışıyorum. Kullanılmaya layık olan projelerimi de GitHub'a yüklüyorum.</p>
+            </p>
+    
+            <p>
+                İşlevselliğe odaklandığım için web sitem basit, GitHub açıklamaları da kısa gelebilir.
+                Bu web sitesini yapma amacım da projelerimi sergilemekti.
+            </p>
+    
+            <p>
+                Web sitemi ziyaret ettiğiniz için teşekkürler. Bana ait profillerin linklerine de buradan ulaşabilirsiniz.
+            </p>
+        </div>
+
+        <div id="links">
+            <script src="js/load-profiles.js"></script>
+        </div>
+    </div>
+
+    <!-- ++++++++++ -->
+
+    <footer class="footer-container">
+        <p>2025 - Bu web sitesi Movansha (Batuhan D.) tarafından  geliştirilmiştir.</p>
+        
+        <a href="https://github.com/Movansha/movansha.github.io">
+            Siteye ait GitHub deposu için bu linke tıklayın
+        </a>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+.about-me-container {
+    gap: 15px;
+    padding-inline: 20px;
+}
+
+.about-me-container > #line {
+    width: 90%;
+    height: 1px;
+
+    margin-block: 10px;
+}
+
+/* Content: */
+
+#profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#profile > a > img {
+    width: 10.5rem;
+}
+
+#profile > p {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+/* */
+
+#description {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+#description > p {
+    text-align: center;
+    margin-block: 12px;
+}
+
+/* Profiles: */
+
+#links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+
+    gap: 15px;
+    margin-top: 20px;
+
+    max-width: 750px;
+}
+
+#links > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    
+    padding-inline: 15px;
+}
+
+#links > a > img {
+    order: 1;
+    width: 2.2rem;
+}
+
+#links > a > p {
+    order: 2;
+}
+
+/* Responsive design: */
+
+@media (min-width: 720px) {
+    .about-me-container > #line {
+        width: 1px;
+        height: 210px;
+
+        margin-block: 0px;
+    }
+
+    #profile {
+        margin-inline: 20px;
+    }
+
+    #description {
+        margin-inline: 20px;
+    }
+
+    #description > p {
+        text-align: left;
+    }
+}

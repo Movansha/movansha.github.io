@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "Encode Sans Light";
+    src: url("/fonts/encode-sans-expanded/EncodeSansExpanded-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Encode Sans Regular";
+    src: url("/fonts/encode-sans-expanded/EncodeSansExpanded-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Encode Sans Medium";
+    src: url("/fonts/encode-sans-expanded/EncodeSansExpanded-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Encode Sans Semi Bold";
+    src: url("/fonts/encode-sans-expanded/EncodeSansExpanded-SemiBold.ttf") format("truetype");
+}
+
+/* ---------- */
+
+@font-face {
+    font-family: "Albert Sans Extra Light";
+    src: url("/fonts/albert-sans/AlbertSans-ExtraLight.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "Albert Sans Regular";
+    src: url("/fonts/albert-sans/AlbertSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Albert Sans Medium";
+    src: url("/fonts/albert-sans/AlbertSans-Medium.ttf") format("truetype");
+}

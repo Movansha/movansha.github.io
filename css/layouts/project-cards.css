@@ -1,0 +1,56 @@
+.projects-container {
+    gap: 15px;
+    margin-top: 7.5rem;
+}
+
+/* Content: */
+
+.projects-container > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding-inline: 10px;
+    padding-block: 8px;
+
+    width: 100%;
+    overflow-wrap: anywhere;
+}
+
+.projects-container > a > img {
+    margin-block: 10px;
+    width: 4.4rem;
+
+    transition: width 300ms ease;
+}
+
+@media (pointer: fine) {
+    .projects-container > a:hover > img {
+        width: 5.5rem;
+
+        transition: width 300ms ease;
+    }
+}
+
+/* Responsive design: */
+
+@media (min-width: 720px) {
+    .projects-container {
+        margin-top: 6.7rem;
+    }
+    
+    .projects-container > a {
+        max-width: 280px;
+    }
+
+    .projects-container > a > p {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+    
+        line-clamp: 2;
+        -webkit-line-clamp: 2;
+    
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

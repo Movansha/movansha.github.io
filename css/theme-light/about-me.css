@@ -1,0 +1,58 @@
+.about-me-container > #line {
+    background-color: #909090;
+}
+
+/* Content: */
+
+#profile > a > img {
+    border-radius: 100%;
+
+    transition: box-shadow 300ms ease;
+}
+
+#profile > p {
+    font-family: "Encode Sans Light";
+    font-size: 1.6rem;
+}
+
+/* Profiles: */
+
+#links > a {
+    text-decoration: none;
+    text-align: center;
+    font-family: "Encode Sans Regular";
+    font-size: 0.95rem;
+
+    background-color: #eaeaea;
+    color: #474d9e;
+
+    border: 2px solid #d9d2df;
+    border-radius: 500px;
+
+    transition: box-shadow 400ms ease;
+    transition: border-color 400ms ease;
+}
+
+/* */
+
+@media (pointer: fine) {
+    #profile > a:hover > img {
+        box-shadow: 0px 0px 20px #000000b6;
+
+        transition: box-shadow 300ms ease;
+    }
+
+    #links > a:hover {
+        box-shadow: 0px 0px 15px #1e004144;
+
+        background-color: #e7e2ec;
+        border-color: #b5afcc;
+    
+        transition: box-shadow 400ms ease;
+        transition: border-color 400ms ease;
+    }
+}
+
+#links > a:active {
+    border-color: #a273ce;
+}
