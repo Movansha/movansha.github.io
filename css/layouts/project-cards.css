@@ -1,6 +1,5 @@
 .projects-container {
     gap: 15px;
-    margin-top: 7.5rem;
 }
 
 /* Content: */
@@ -35,10 +34,6 @@
 /* Responsive design: */
 
 @media (min-width: 720px) {
-    .projects-container {
-        margin-top: 6.7rem;
-    }
-    
     .projects-container > a {
         max-width: 280px;
     }

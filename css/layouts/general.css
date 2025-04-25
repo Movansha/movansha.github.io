@@ -18,6 +18,10 @@ body {
 
 /* Others: */
 
+.main-container:first-of-type {
+    margin-top: 7.5rem;
+}
+
 .main-container {
     display: flex;
     flex-wrap: wrap;
@@ -43,6 +47,10 @@ body {
 /* Responsive design: */
 
 @media (min-width: 720px) {
+    .main-container:first-of-type {
+        margin-top: 6.7rem;
+    }
+
     .main-container {
         padding-bottom: 35px;
     }
