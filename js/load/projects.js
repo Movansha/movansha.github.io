@@ -6,9 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(data => {
 
         const container = document.querySelector(".projects-container");
-        const container_header = document.querySelector(".projects-container > h1");
-
-        total = 0;
 
         data.forEach(item => {
             const card = document.createElement("a");
@@ -37,11 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
             card.appendChild(description);
 
             container.appendChild(card);
-
-            total += 1;
         });
-
-        container_header.textContent += " (" + total + ") :"
 
     }).catch(error => console.error("Contents in " + file_to_read + " couldn't loaded!", error));
 });
