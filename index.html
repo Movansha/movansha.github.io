@@ -7,9 +7,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+    
     <link rel="shortcut icon" href="/images/favicon.ico"> 
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="/images/favicon.ico">
     <title>Movansha - Kişisel web sitesi</title>
 
     <!-- SEO: -->
@@ -35,33 +35,35 @@
     
     <!-- Design: -->
 
-    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="/css/fonts.css">
 
     <!-- Layouts: -->
 
-    <link rel="stylesheet" href="css/layouts/navbar.css">
-    <link rel="stylesheet" href="css/layouts/general.css">
+    <link rel="stylesheet" href="/css/layouts/navbar.css">
+    <link rel="stylesheet" href="/css/layouts/general.css">
     
     <link rel="stylesheet" href="css/layouts/project-cards.css">
     <link rel="stylesheet" href="css/layouts/about-me.css">
 
-    <link rel="stylesheet" href="css/layouts/footer.css">
+    <link rel="stylesheet" href="/css/layouts/footer.css">
 
-    <!-- Light theme: -->
+    <!-- Style and theme: -->
 
-    <link rel="stylesheet" href="css/theme-light/navbar.css">
-    <link rel="stylesheet" href="css/theme-light/general.css">
+    <link rel="stylesheet" href="/css/style/navbar.css">
+    <link rel="stylesheet" href="/css/style/general.css">
 
-    <link rel="stylesheet" href="css/theme-light/project-cards.css">
-    <link rel="stylesheet" href="css/theme-light/about-me.css">
+    <link rel="stylesheet" href="css/style/project-cards.css">
+    <link rel="stylesheet" href="css/style/about-me.css">
     
-    <link rel="stylesheet" href="css/theme-light/footer.css">
+    <link rel="stylesheet" href="/css/style/footer.css">
+
+    <script src="/js/load/theme.js"></script>
 </head>
 
 <body>
     <nav class="navbar">
         <a id="navbar-logo" href="#about-me">
-            <img src="images/navbar/logo-white.webp" alt="Movansha logosu">
+            <img src="images/navbar/logo.webp" alt="Movansha logosu">
         </a>
 
         <h1 id="navbar-header">
@@ -86,12 +88,20 @@
         <script src="js/navbar.js"></script>
     </nav>
 
+    <!---->
+
+    <button id="theme-toggle" title="Temayı değiştir" onclick="switch_theme()">
+        <img src="/images/buttons/sun.webp" alt="Güneş simgesi">
+    </button>
+
+    <script src="/js/change-theme.js"></script>
+
     <!-- ++++++++++ -->
     
     <div class="main-container projects-container" id="my-projects">
-        <h1>Projelerim</h1>
+        <h1>Diğer projelerim</h1>
 
-        <script src="js/load-projects.js"></script>
+        <script src="js/load/projects.js"></script>
     </div>
 
     <!-- ++++++++++ -->
@@ -123,7 +133,7 @@
         </div>
 
         <div id="links">
-            <script src="js/load-profiles.js"></script>
+            <script src="js/load/profiles.js"></script>
         </div>
     </div>
 

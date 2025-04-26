@@ -1,0 +1,161 @@
+.navbar {
+    background-color: #222029;
+    color: #dedede;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Content: */
+
+#navbar-header {    
+    font-family: "Encode Sans Medium";
+    font-weight: normal;
+    font-size: 1.3rem;
+
+    border-bottom: 2px solid #9172c4;
+}
+
+#hamburger {
+    background: none;
+    border: none;
+}
+
+#hamburger.active {
+    background-color: #9172c4;
+    border-radius: 10px;
+
+    transition: background-color 200ms ease;
+}
+
+/* Menu: */
+
+#menu {
+    background-color: #2e2833;
+    
+    font-family: "Encode Sans Light";
+
+    border: 4px outset #7e83c4;
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+#menu.active {
+    opacity: 1;
+    visibility: visible;
+
+    transition: opacity 150ms ease;
+}
+
+#menu > a {    
+    text-decoration: none;
+    color: #ffffff;
+    
+    border-radius: 15px;
+    border-top-right-radius: 0px;
+
+    transition: background-color 175ms ease;
+}
+
+@media (pointer: fine) {
+    #menu > a:hover {
+        background-color: #7f6fc4;
+
+        transition: background-color 175ms ease;
+    }
+}
+
+#menu > a:active {
+    background-color: #7e5897;
+}
+
+/* Responsive design: */
+
+@media (min-width: 875px) {
+    .navbar {
+        background-color: #1e1e27f5;
+    }
+
+    #navbar-header, .dark #navbar-header {
+        border-bottom: none;
+    }
+
+    .navbar > hr {
+        height: 1px;
+    
+        background-color: #7e83c4;
+        border: none;
+    }
+
+    #menu {
+        background-color: #2e2833;
+        border-width: 1px;
+
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+/* ---------- Dark theme: ---------- */
+
+.dark .navbar {
+    background-color: #271c3bf5;
+    border-bottom: 1px solid #7c5d7c;
+}
+
+/* Content: */
+
+.dark #navbar-header {
+    border-bottom: 1px solid #a370a3;
+}
+
+.dark #hamburger.active {
+    background-color: #996099;
+}
+
+/* Menu: */
+
+.dark #menu {
+    background-color: #2a2533;
+    border: 1px solid #925392;
+
+    box-shadow: 0 0 20px #000000;
+}
+
+.dark #menu > a {
+    color: #dedede;
+}
+
+@media (pointer: fine) {
+    .dark #menu > a:hover {
+        background-color: #3d393d;
+    }
+}
+
+.dark #menu > a:active {
+    background-color: #84498a;
+}
+
+/* Responsive design: */
+
+@media (min-width: 875px) {
+    .dark .navbar {
+        background-color: #29203df5;
+    }
+
+    .dark #navbar-header {
+        border-bottom: none;
+    }
+
+    .dark .navbar > hr {
+        background-color: #925392;
+    }
+
+    .dark #menu {
+        background-color: #231c30;
+        box-shadow: none;
+    }
+}

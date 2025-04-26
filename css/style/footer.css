@@ -1,0 +1,28 @@
+footer {
+    text-align: center;
+    font-family: "Albert Sans Extra Light";
+    font-size: 1.080rem;
+    
+    background-color: #272529;
+    color: #dfdfdf;
+}
+
+footer > a {
+    text-decoration: none;
+    text-align: center;
+
+    color: #9789e9;
+}
+
+/* ---------- Dark theme: ---------- */
+
+.dark footer {
+    background-color: #282430;
+    color: #ffffff;
+    
+    border-top: 1px solid #473d55;
+}
+
+.dark footer > a {
+    color: #f8a8ff;
+}
