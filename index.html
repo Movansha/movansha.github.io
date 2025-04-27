@@ -42,9 +42,9 @@
  
     <script>
         if (location.pathname == "/" || location.pathname == "/index.html") {
-        const lang = navigator.language || navigator.user_lang;
+        const user_lang = navigator.language || navigator.user_lang;
 
-        if (lang == "tr") window.location.replace("/tr/");
+        if (user_lang.startsWith("tr")) window.location.replace("/tr/");
         else window.location.replace("/en/");
     }
     </script>
