@@ -30,12 +30,12 @@ body {
     color: #6943a7;
 }
 
-#theme-toggle {
+.modifier-button {
     cursor: pointer;
     background-color: #e0e0e0d0;
 
     border: 1px solid #b4b4b4;
-    border-radius: 15px;
+    border-radius: 10px;
 
     box-shadow: 0 0 8px #00000033;
 
@@ -43,7 +43,7 @@ body {
 }
 
 @media (pointer: fine) {
-    #theme-toggle:hover {
+    .modifier-button:hover {
         background-color: #cfcfcf;
     }
 }
@@ -72,7 +72,7 @@ body {
     color: #c17ec7;
 }
 
-.dark #theme-toggle {
+.dark .modifier-button {
     background-color: #282430;
     border-color: #594674;
 
@@ -80,7 +80,7 @@ body {
 }
 
 @media (pointer: fine) {
-    .dark #theme-toggle:hover {
+    .dark .modifier-button:hover {
         background-color: #564d69;
     }
 }

@@ -6,10 +6,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 60px;
 
     margin: 0px;
     padding: 0px;
+
+    padding-top: 8rem;
 }
 
 * {
@@ -18,21 +20,17 @@ body {
 
 /* Others: */
 
-.main-container:first-of-type {
-    margin-top: 7.5rem;
-}
-
 .main-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 
-    scroll-margin-top: 5rem;
-    margin-inline: 20px;
-
     padding-inline: 15px;
     padding-bottom: 25px;
+
+    scroll-margin-top: 6rem;
+    margin-inline: 20px;
     
     max-width: 990px;
 }
@@ -44,16 +42,23 @@ body {
     margin-block: 25px;
 }
 
-#theme-toggle {
+.modifiers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
     position: fixed;
     z-index: 1;
-    padding: 10px;
 
     bottom: 5%;
     right: 5%;
 }
 
-#theme-toggle img {
+.modifier-button {
+    padding: 10px;
+}
+
+.modifier-button > img {
     display: block;
     width: 2rem;
 }
@@ -61,15 +66,16 @@ body {
 /* Responsive design: */
 
 @media (min-width: 720px) {
-    .main-container:first-of-type {
-        margin-top: 6.7rem;
-    }
-
     .main-container {
         padding-bottom: 35px;
     }
 
-    #theme-toggle img {    
+    .modifiers {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .modifier-button > img {    
         width: 2.3rem;
     }
 }

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="shortcut icon" href="/images/favicon.ico"> 
+    <link rel="icon" href="/images/favicon.ico">
+    <title>Movansha - Personal website</title>
+
+    <!-- SEO: -->
+
+    <meta name="author" content="Batuhan D.">
+    <meta name="description" content="Movansha (Batuhan D.) - Links to GitHub repositories of projects I've developed...">
+
+    <!-- Open Graph-->
+
+    <meta property="og:image" content="https://movansha.com.tr/images/og-image.jpg">
+    <meta property="og:url" content="https://movansha.com.tr">
+
+    <meta property="og:title" content="Movansha - Personal website">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card-->
+
+    <meta name="twitter:image" content="https://movansha.com.tr/images/og-image.jpg">
+    
+    <meta name="twitter:title" content="Movansha - Personal website">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Design: -->
+
+    <link rel="stylesheet" href="/css/fonts.css">
+
+    <!-- Layouts: -->
+
+    <link rel="stylesheet" href="/css/layouts/navbar.css">
+    <link rel="stylesheet" href="/css/layouts/general.css">
+    
+    <link rel="stylesheet" href="/css/layouts/project-cards.css">
+    <link rel="stylesheet" href="/css/layouts/about-me.css">
+
+    <link rel="stylesheet" href="/css/layouts/footer.css">
+
+    <!-- Style and theme: -->
+
+    <link rel="stylesheet" href="/css/style/navbar.css">
+    <link rel="stylesheet" href="/css/style/general.css">
+
+    <link rel="stylesheet" href="/css/style/project-cards.css">
+    <link rel="stylesheet" href="/css/style/about-me.css">
+    
+    <link rel="stylesheet" href="/css/style/footer.css">
+
+    <script src="/js/load/theme.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a id="navbar-logo" href="#about-me">
+            <img src="/images/navbar/logo.webp" alt="Logo of Movansha">
+        </a>
+
+        <h1 id="navbar-header">
+            Movansha
+        </h1>
+        
+        <button id="hamburger" title="Menu">
+            <img src="/images/navbar/hamburger.webp" alt="Icon of menu">
+        </button>
+        
+        <!---->
+        
+        <hr>
+
+        <div id="menu">
+            <a href="#my-projects">My projects</a>
+            <a href="#about-me">About me</a>
+
+            <a href="https://github.com/Movansha">My GitHub Profile</a>
+        </div>
+
+        <script src="/js/navbar.js"></script>
+    </nav>
+
+    <!---->
+
+    <div class="modifiers">
+        <button class="modifier-button" title="Sayfayı Türkçe görüntüle" onclick="change_language()">
+            <img src="/images/buttons/turkiye.webp" alt="Türk bayrağı">
+        </button>
+
+        <button class="modifier-button" title="Change the color scheme" onclick="switch_theme()">
+            <img id="theme-icon">
+        </button>
+    </div>
+
+    <script src="/js/modifiers.js"></script>
+
+    <!-- ++++++++++ -->
+    
+    <div class="main-container projects-container" id="my-projects">
+        <h1>Discover my projects:</h1>
+
+        <script src="/js/load/projects.js"></script>
+    </div>
+
+    <!-- ++++++++++ -->
+
+    <div class="main-container about-me-container" id="about-me">
+        <h1>About me:</h1>
+
+        <div id="profile">
+            <a href="/images/movansha.jpg" target="_blank"> <img src="/images/movansha.jpg"> </a>
+            <p> Batuhan D. </p>
+        </div>
+
+        <div id="line"></div>
+
+        <div id="description">
+            <p>
+                Welcome! My name is <b>Batuhan</b>. While I was interested and dealing with operating systems and hardware since I was 11 years old,
+                I'm currently learning programming languages and trying to develop various projects.
+            </p>
+
+            <p>
+                For I focus functionality, this website may look simple and GitHub descriptions may be short.
+                I've created this website to showcase my projects.
+            </p>
+
+            <p>
+                Thank you for visiting my website. You may also find links to my profiles here.
+            </p>
+        </div>
+
+        <div id="links">
+            <script src="/js/load/profiles.js"></script>
+        </div>
+    </div>
+
+    <!-- ++++++++++ -->
+
+    <footer class="footer-container">
+        <p>2025 - This website has been developed by Movansha (Batuhan D.)</p>
+        
+        <a href="https://github.com/Movansha/movansha.github.io">
+            Click here to go to the GitHub repository of this website
+        </a>
+    </footer>
+</body>
+
+</html>

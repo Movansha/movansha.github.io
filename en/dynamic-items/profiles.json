@@ -1,0 +1,43 @@
+[
+    {
+        "link": "https://www.youtube.com/@Movansha",
+        "icon": "/images/profiles/youtube.webp",
+        "title": "YouTube"
+    },
+
+    {
+        "link": "https://www.instagram.com/movansha",
+        "icon": "/images/profiles/instagram.webp",
+        "title": "Instagram"
+    },
+
+    {
+        "link": "https://www.technopat.net/sosyal/uye/movansha.865030",
+        "icon": "/images/profiles/technopat.webp",
+        "title": "Technopat"
+    },
+
+    {
+        "link": "https://www.xbox.com/play/user/Movansha",
+        "icon": "/images/profiles/xbox.webp",
+        "title": "Xbox"
+    },
+
+    {
+        "link": "https://steamcommunity.com/id/Movansha",
+        "icon": "/images/profiles/steam.webp",
+        "title": "Steam"
+    },
+
+    {
+        "link": "https://store.epicgames.com/u/42b55300420c42dea9a575051f6eea41",
+        "icon": "/images/profiles/epic-games.webp",
+        "title": "Epic Games"
+    },
+
+    {
+        "link": "https://www.lfs.net/profile/2657884",
+        "icon": "/images/profiles/lfs.webp",
+        "title": "Live for Speed"
+    }
+]

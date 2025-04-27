@@ -15,8 +15,13 @@
     <!-- SEO: -->
 
     <meta name="author" content="Batuhan D.">
-    <meta name="keywords" content="movansha, developer, github, projects, software">
     <meta name="description" content="Movansha (Batuhan D.) - Geliştirdiğim projelerin GitHub depolarına ait linkler...">
+
+    <link rel="canonical" href="https://movansha.com.tr/">
+    
+    <link rel="alternate" href="https://movansha.com.tr/tr/" hreflang="tr">
+    <link rel="alternate" href="https://movansha.com.tr/en/" hreflang="en">
+    <link rel="alternate" href="https://movansha.com.tr/en/" hreflang="x-default">
 
     <!-- Open Graph-->
 
@@ -27,125 +32,28 @@
     <meta property="og:type" content="website">
 
     <!-- Twitter Card-->
-
+     
     <meta name="twitter:image" content="https://movansha.com.tr/images/og-image.jpg">
     
     <meta name="twitter:title" content="Movansha - Kişisel web sitesi">
     <meta name="twitter:card" content="summary_large_image">
-    
-    <!-- Design: -->
 
-    <link rel="stylesheet" href="/css/fonts.css">
+    <!-- Load pages in different languages: -->
+ 
+    <script>
+        if (location.pathname == "/" || location.pathname == "/index.html") {
+        const lang = navigator.language || navigator.user_lang;
 
-    <!-- Layouts: -->
-
-    <link rel="stylesheet" href="/css/layouts/navbar.css">
-    <link rel="stylesheet" href="/css/layouts/general.css">
-    
-    <link rel="stylesheet" href="css/layouts/project-cards.css">
-    <link rel="stylesheet" href="css/layouts/about-me.css">
-
-    <link rel="stylesheet" href="/css/layouts/footer.css">
-
-    <!-- Style and theme: -->
-
-    <link rel="stylesheet" href="/css/style/navbar.css">
-    <link rel="stylesheet" href="/css/style/general.css">
-
-    <link rel="stylesheet" href="css/style/project-cards.css">
-    <link rel="stylesheet" href="css/style/about-me.css">
-    
-    <link rel="stylesheet" href="/css/style/footer.css">
-
-    <script src="/js/load/theme.js"></script>
+        if (lang == "tr") window.location.replace("/tr/");
+        else window.location.replace("/en/");
+    }
+    </script>
 </head>
 
-<body>
-    <nav class="navbar">
-        <a id="navbar-logo" href="#about-me">
-            <img src="images/navbar/logo.webp" alt="Movansha logosu">
-        </a>
-
-        <h1 id="navbar-header">
-            Movansha
-        </h1>
-        
-        <button id="hamburger" title="Menü">
-            <img src="images/navbar/hamburger.webp" alt="Menü simgesi">
-        </button>
-        
-        <!---->
-        
-        <hr>
-
-        <div id="menu">
-            <a href="#my-projects">Projelerim</a>
-            <a href="#about-me">Hakkımda</a>
-
-            <a href="https://github.com/Movansha">GitHub Profilim</a>
-        </div>
-
-        <script src="js/navbar.js"></script>
-    </nav>
-
-    <!---->
-
-    <button id="theme-toggle" title="Temayı değiştir" onclick="switch_theme()">
-        <img src="/images/buttons/sun.webp" alt="Güneş simgesi">
-    </button>
-
-    <script src="/js/change-theme.js"></script>
-
-    <!-- ++++++++++ -->
-    
-    <div class="main-container projects-container" id="my-projects">
-        <h1>Projelerimi keşfedin:</h1>
-
-        <script src="js/load/projects.js"></script>
-    </div>
-
-    <!-- ++++++++++ -->
-
-    <div class="main-container about-me-container" id="about-me">
-        <h1>Benim hakkımda:</h1>
-
-        <div id="profile">
-            <a href="images/movansha.jpg" target="_blank"> <img src="images/movansha.jpg"> </a>
-            <p> Batuhan D. </p>
-        </div>
-
-        <div id="line"></div>
-
-        <div id="description">
-            <p>
-                Hoş geldiniz. Adım <b>Batuhan</b>. 11 yaşımdan beridir işletim sistemlerine, donanımlara vesaire ilgi duyup kurcalarken güncel olarak
-                yazılım dilleri öğreniyor ve çeşitli projeler geliştirmeye çalışıyorum. Kullanılmaya layık olan projelerimi de GitHub'a yüklüyorum.</p>
-            </p>
-    
-            <p>
-                İşlevselliğe odaklandığım için web sitem basit, GitHub açıklamaları da kısa gelebilir.
-                Bu web sitesini yapma amacım da projelerimi sergilemekti.
-            </p>
-    
-            <p>
-                Web sitemi ziyaret ettiğiniz için teşekkürler. Bana ait profillerin linklerine de buradan ulaşabilirsiniz.
-            </p>
-        </div>
-
-        <div id="links">
-            <script src="js/load/profiles.js"></script>
-        </div>
-    </div>
-
-    <!-- ++++++++++ -->
-
-    <footer class="footer-container">
-        <p>2025 - Bu web sitesi Movansha (Batuhan D.) tarafından  geliştirilmiştir.</p>
-        
-        <a href="https://github.com/Movansha/movansha.github.io">
-            Siteye ait GitHub deposuna gitmek için bu linke tıklayın
-        </a>
-    </footer>
+<body> 
+    <p style="text-align: center; font-size: 1.3rem;">
+        Yönlendiriliyorsunuz...
+    </p>
 </body>
 
 </html>
