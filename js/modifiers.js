@@ -8,6 +8,6 @@ function switch_theme() {
 function change_language() {
     const current_path = location.pathname;
 
-    if (current_path.startsWith("/tr")) window.location.replace("/tr/");
-    else window.location.replace("/en/");
+    if (current_path.startsWith("/tr")) window.location.replace("/en/");
+    else window.location.replace("/tr/");
 }
