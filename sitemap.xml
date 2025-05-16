@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- -->
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
 <url>
-  <loc>https://movansha.com.tr/tr/</loc>
+  <loc>https://movansha.com.tr/en/</loc>
 </url>
 
 <url>
-  <loc>https://movansha.com.tr/en/</loc>
+  <loc>https://movansha.com.tr/tr/</loc>
 </url>
 
 </urlset>
