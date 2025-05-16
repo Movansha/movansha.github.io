@@ -1,6 +1,7 @@
 const hamburger = document.getElementById("hamburger");
 const menu = document.getElementById("menu");
 
+// ----------
 
 hamburger.addEventListener("click", (event) => {
   hamburger.classList.toggle("active");
