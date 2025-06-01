@@ -1,5 +1,5 @@
 .about-me-container > #line {
-    background-color: #909090;
+    background-color: #757575;
 }
 
 /* Content: */
@@ -60,25 +60,25 @@
 /* ---------- Dark theme: ---------- */
 
 .dark #links > a {
-    background-color: #362b3d;
-    color: #dbcbda;
+    background-color: #37252b;
+    color: #d5d5d5;
 
-    border: 1px solid #6f4270;
+    border: 1px solid #78374f;
 }
 
 @media (pointer: fine) {
     .dark #profile > a:hover > img {
-        box-shadow: 0px 0px 20px #7c4b9990;
+        box-shadow: 0px 0px 20px #853351;
     }
 
     .dark #links > a:hover {
-        box-shadow: 0px 0px 15px #793c8170;
+        background-color: #6f364b;
+        border-color: #c4577f;
         
-        background-color: #593c6b;
-        border-color: #9b6aa1;
+        box-shadow: 0px 0px 10px #6f364b;
     }
-}
 
-.dark #links > a:active {
-    border-color: #ce76f1;
+    .dark #links > a:active {
+        border-color: #f14760;
+    }
 }

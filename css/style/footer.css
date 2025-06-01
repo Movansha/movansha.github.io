@@ -17,12 +17,11 @@ footer > a {
 /* ---------- Dark theme: ---------- */
 
 .dark footer {
-    background-color: #282430;
-    color: #ffffff;
+    background-color: #222222;
     
-    border-top: 1px solid #473d55;
+    border-top: 1px solid #353535;
 }
 
 .dark footer > a {
-    color: #f8a8ff;
+    color: #ff8bb0;
 }

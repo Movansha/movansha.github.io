@@ -51,36 +51,36 @@ body {
 /* ---------- Dark theme: ---------- */
 
 .dark body {
-    background-color: #1d1c22;
-    color: #dedede;
+    background-color: #181818;
+    color: #d5d5d5;
 }
 
 .dark ::selection {
-    background-color: #9967a5;
+    background-color: #772138;
 }
 
 /* Content: */
 
 .dark .main-container {
-    background-color: #282430;
-    border-color: #393144;
+    background-color: #212121;
+    border-color: #343434;
 
-    box-shadow: 0 0 5px #73549c35;
+    box-shadow: 0 0 8px #34343490;
 }
 
 .dark .main-container > h1:first-of-type {
-    color: #c17ec7;
+    color: #d45b8e;
 }
 
 .dark .modifier-button {
-    background-color: #282430;
-    border-color: #594674;
+    background-color: #1c1c1cd5;
+    border-color: #343434;
 
-    box-shadow: 0 0 8px #73549c48;
+    box-shadow: 0 0 8px #343434c5;
 }
 
 @media (pointer: fine) {
     .dark .modifier-button:hover {
-        background-color: #564d69;
+        background-color: #343434;
     }
 }

@@ -103,60 +103,67 @@
 /* ---------- Dark theme: ---------- */
 
 .dark .navbar {
-    background-color: #271c3bf5;
-    border-bottom: 1px solid #7c5d7c;
+    background-color: #181818;
+    border-bottom: 1px solid #4f4f4f;
+
+    box-shadow: 0 0 50px #000000;
 }
 
 /* Content: */
 
 .dark #navbar-header {
-    border-bottom: 1px solid #a370a3;
+    border-bottom: 1px solid #ab4468;
 }
 
 .dark #hamburger.active {
-    background-color: #996099;
+    background-color: #ab4468;
 }
 
 /* Menu: */
 
 .dark #menu {
-    background-color: #2a2533;
-    border: 1px solid #925392;
+    background-color: #242424;
+    border: 1px solid #5f5f5f;
 
-    box-shadow: 0 0 20px #000000;
+    box-shadow: 0 0 50px #181818;
 }
 
 .dark #menu > a {
-    color: #dedede;
+    color: #dfdfdf;
 }
 
 @media (pointer: fine) {
     .dark #menu > a:hover {
-        background-color: #3d393d;
+        background-color: #353535;
     }
 }
 
 .dark #menu > a:active {
-    background-color: #84498a;
+    background-color: #ab4468;
 }
 
 /* Responsive design: */
 
 @media (min-width: 875px) {
     .dark .navbar {
-        background-color: #29203df5;
+        background-color: #232323;
+        border-color: #505050;
     }
 
     .dark #navbar-header {
         border-bottom: none;
     }
 
+    .dark #menu {
+        border-color: #c54b76;
+    }
+
     .dark .navbar > hr {
-        background-color: #925392;
+        background-color: #c54b76;
     }
 
     .dark #menu {
-        background-color: #231c30;
+        background-color: #212121;
         box-shadow: none;
     }
 }
