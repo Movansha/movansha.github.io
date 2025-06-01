@@ -72,9 +72,7 @@
     .dark .projects-container > a:hover > h1 {
         color: #dedede;
     }
-}
 
-@media (pointer: fine) {
     .dark .projects-container > a:active {
         border-color: #d54455;
     }
