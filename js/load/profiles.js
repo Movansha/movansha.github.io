@@ -20,6 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
             link.draggable = "true";
 
             icon.src = item.icon;
+            icon.draggable = false;
+            
             title.textContent = item.title;
 
             // ----------

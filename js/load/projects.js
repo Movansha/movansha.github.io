@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             icon.src = item.icon;
             icon.alt = "Project icon"
+            icon.draggable = false;
 
             description.textContent = item.description;
 
