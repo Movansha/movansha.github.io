@@ -74,7 +74,7 @@
 
 /* Responsive design: */
 
-@media (min-width: 875px) {
+@media (min-width: 1000px) {
     .navbar {
         background-color: #1e1e27f5;
     }
@@ -144,7 +144,7 @@
 
 /* Responsive design: */
 
-@media (min-width: 875px) {
+@media (min-width: 1000px) {
     .dark .navbar {
         background-color: #232323;
         border-color: #505050;

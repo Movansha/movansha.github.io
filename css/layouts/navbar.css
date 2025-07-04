@@ -62,7 +62,7 @@
 
 /* Responsive design: */
 
-@media (min-width: 875px) {
+@media (min-width: 1000px) {
     #navbar-header {
         flex: 1;
         padding-bottom: 0px;
