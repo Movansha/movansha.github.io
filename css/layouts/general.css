@@ -22,9 +22,9 @@ body {
 
 .main-container {
     display: flex;
+    
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
 
     padding-inline: 15px;
     padding-bottom: 25px;
