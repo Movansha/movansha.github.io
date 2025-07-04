@@ -26,7 +26,7 @@
     background-color: #eaeaea;
     color: #474d9e;
 
-    border: 2px solid #d9d2df;
+    border: 1px solid #d9d2df;
     border-radius: 500px;
 
     transition: box-shadow 400ms ease;
@@ -63,7 +63,7 @@
     background-color: #37252b;
     color: #d5d5d5;
 
-    border: 1px solid #78374f;
+    border-color: #78374f;
 }
 
 @media (pointer: fine) {
