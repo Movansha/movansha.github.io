@@ -1,0 +1,69 @@
+/* Content: */
+
+.maps-container > img {
+    width: 15rem;
+}
+
+.maps-container > p {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Containers: */
+
+.downloads {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.downloads > span {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: center;
+
+    padding: 15px;
+    gap: 10px;
+}
+
+.downloads > span p {
+    margin: 0px;
+    margin-bottom: 10px;
+
+    padding-bottom: 5px;
+}
+
+/* Download links */
+
+.downloads a img {
+    width: 2rem;
+}
+
+.downloads a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-inline: 20px;
+    padding-block: 10px;
+    gap: 15px;
+}
+
+/* Responsive design: */
+
+@media (min-width: 720px) {
+    .maps-container > img {
+        width: 30rem;
+    }
+
+    .maps-container > p {
+        padding-inline: 25px;
+    }
+
+    .downloads {
+        flex-direction: row;
+    }
+}
