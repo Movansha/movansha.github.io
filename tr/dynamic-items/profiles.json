@@ -9,5 +9,11 @@
         "link": "https://www.youtube.com/@Movansha",
         "icon": "/images/profiles/youtube.webp",
         "title": "YouTube"
+    },
+
+    {
+        "link": "https://open.spotify.com/user/31jbuc3gq3pour2hudh2hnhz4o7q",
+        "icon": "/images/profiles/spotify.webp",
+        "title": "Spotify"
     }
 ]
