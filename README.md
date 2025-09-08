@@ -1,4 +1,4 @@
-# ![movansha](https://github.com/user-attachments/assets/daced549-a21c-4191-b3c1-9e84ea5af5b5) Movansha - Personal website
+# Movansha - Personal website
 
 This is the first website I have created for myself
 
