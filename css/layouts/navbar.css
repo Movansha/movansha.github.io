@@ -19,7 +19,7 @@
 }
 
 #navbar-header {
-    padding-inline: 15px;
+    padding-inline: 10px;
     padding-bottom: 8px;
 }
 
@@ -97,4 +97,5 @@
         padding-inline: 20px;
         padding-block: 13px;
     }
+
 }
