@@ -12,6 +12,12 @@
     },
 
     {
+        "link": "https://evrimagaci.org/movansha",
+        "icon": "/images/profiles/evrim-agaci.webp",
+        "title": "Evrim Ağacı"
+    },
+
+    {
         "link": "https://www.instagram.com/movansha",
         "icon": "/images/profiles/instagram.webp",
         "title": "Instagram"
