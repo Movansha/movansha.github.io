@@ -57,21 +57,6 @@
     border-color: #a273ce;
 }
 
-/* Animation: */
-@keyframes profile-icon-animation {
-    0% {transform: rotateZ(0deg);}
-
-    20% {transform: rotateZ(30deg);}
-
-    55% {transform: rotateZ(-25deg);}
-
-    100% {transform: rotateZ(0deg);}
-}
-
-#links > a > img {
-    animation: 2.25s infinite profile-icon-animation;
-}
-
 /* ---------- Dark theme: ---------- */
 
 .dark #links > a {
