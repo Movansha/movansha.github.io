@@ -3,20 +3,20 @@
         "link": "https://github.com/Movansha/remote-cmd-line",
         "title": "Remote Command Line",
         "icon": "/images/projects/rcl.webp",
-        "description": "Windows için basit uzaktan kontrol uygulaması"
+        "description": "Windows için uzaktan komut satırı uygulaması"
     },
 
     {
         "link": "https://github.com/Movansha/berry-clicker",
         "title": "Berry Clicker",
         "icon": "/images/projects/berry.webp",
-        "description": "Mouse için otomatik tıklama uygulaması"
+        "description": "Mouselar için kapsamlı otomatik tıklama uygulaması"
     },
 
     {
         "link": "https://github.com/Movansha/duck-dns-ip-updater",
         "title": "Duck DNS IP Updater",
         "icon": "/images/projects/ddiu.webp",
-        "description": "Duck DNS için IPv4 ve IPv6 adres güncelleme uygulaması"
+        "description": "IPv4 ve IPv6 adres güncelleme uygulaması"
     }
 ]
