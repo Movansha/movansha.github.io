@@ -33,11 +33,15 @@
     display: flex;
     flex-wrap: wrap;
     flex: 1;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 15px;
 }
 
 #description > p {
     text-align: center;
-    margin-block: 12px;
 }
 
 /* Profiles: */
@@ -88,7 +92,10 @@
     }
 
     #description {
+        justify-content: left;
+
         margin-inline: 20px;
+        margin-bottom: 0px;
     }
 
     #description > p {
