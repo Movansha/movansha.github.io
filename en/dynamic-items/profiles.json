@@ -6,12 +6,6 @@
     },
 
     {
-        "link": "https://www.youtube.com/@Movansha",
-        "icon": "/images/profiles/youtube.webp",
-        "title": "YouTube"
-    },
-
-    {
         "link": "https://www.fragrantica.com/member/2880832",
         "icon": "/images/profiles/fragrantica.webp",
         "title": "Fragrantica"
@@ -21,6 +15,18 @@
         "link": "https://evrimagaci.org/movansha",
         "icon": "/images/profiles/evrim-agaci.webp",
         "title": "Evrim Ağacı"
+    },
+
+    {
+        "link": "https://www.youtube.com/@Movansha",
+        "icon": "/images/profiles/youtube.webp",
+        "title": "YouTube"
+    },
+
+    {
+        "link": "https://music.youtube.com/channel/UCsHV9D6mRv2HoYitQkDNQtQ",
+        "icon": "/images/profiles/yt-music.webp",
+        "title": "YouTube Music"
     },
 
     {
