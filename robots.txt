@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /images/buttons/
+Disallow: /images/icons/
+Disallow: /images/navbar/
+Disallow: /images/profiles/
