@@ -2,8 +2,11 @@
 
 This is the first website I have created for myself
 
-These files have not minified but images in this project converted to **"webp"** format to reduce their size.
+The source files have not minified but images are converted to **"webp"** format to reduce their file size.
 
-> - **Responsive design for the narrow or wide screens**
+## Features
+
 > - **Light and dark color scheme**
 > - **Pages in Turkish and English languages**
+> - **Responsive design for the narrow or wide screens**
+> - **Dynamic client-side internationalization**
