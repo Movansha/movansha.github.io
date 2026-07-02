@@ -1,0 +1,56 @@
+{
+    "head-title": "Movansha - Personal Archive",
+
+    "title": {
+        "menu": "Menu",
+        "theme": "Change the color scheme",
+        "language": "Sayfayı Türkçe görüntüle"
+    },
+
+    "navbar": {
+        "header": "Movansha",
+        "projects": "Projects",
+        "maps": "Maps",
+        "about-me": "About me",
+        "guides": "My guides",
+        "github": "My GitHub profile"
+    },
+
+    "header-my-projects": "My Projects",
+
+    "custom-maps": {
+        "header": "(Custom) Map of Türkiye",
+
+        "description": [
+            "I created this high resolution map by coloring the",
+            "geographical regions and increasing readability.",
+            "This map shows the administrative divisions of Türkiye.",
+            "It was not developed by experts."
+        ],
+
+        "normal": "Normal",
+        "transparent": "Transparent",
+
+        "download-jpg": "Download as JPG",
+        "download-pdf": "Download as PDF",
+        "download-png": "Download as PNG"
+    },
+
+    "about-me": {
+        "header": "¿About Me?",
+        "name": "Batuhan D.",
+
+        "description-1": "Greetings!",
+        "description-2": [
+            "Software or website development is not my profession.",
+            "I wanted to be a software developer for a while, but it didn't work out.",
+            "After that, I was developing applications/websites simply because I enjoyed doing it.",
+            "Now I can't dedicate time to this anymore.",
+            "Maybe I can use this website as an archive from now on.",
+            "Even if I do nothing with it, it will remain as an environment that carries the traces of my past..."
+        ],
+        "description-3": "You may also find links to my other profiles below."
+    },
+
+    "footer-repo-link": "Click here to go to the GitHub repository of this website"
+}

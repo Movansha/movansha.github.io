@@ -1,36 +1,35 @@
-document.addEventListener("DOMContentLoaded", () => {
+async function load_profiles() {
+    const file_to_read = "/contents/dynamic-items/profiles.json";
 
-    const file_to_read = "dynamic-items/profiles.json";
+    const response = await fetch(file_to_read);
+    const data = await response.json();
+    
+    const container = document.querySelector(".about-me-container > #links");
 
-    fetch(file_to_read).then(response => response.json())
-    .then(data => {
+    data.forEach(item => {
+        const link = document.createElement("a");
 
-        const container = document.querySelector(".about-me-container > #links");
+        const icon = document.createElement("img");
+        const title = document.createElement("p");
 
-        data.forEach(item => {
-            const link = document.createElement("a");
-
-            const icon = document.createElement("img");
-            const title = document.createElement("p");
-
-            // ----------
+        // ----------
             
-            link.href = item.link;
-            link.target = "_blank";
-            link.draggable = "true";
+        link.href = item.link;
+        link.target = "_blank";
+        link.draggable = "true";
 
-            icon.src = item.icon;
-            icon.draggable = false;
+        icon.src = item.icon;
+        icon.draggable = false;
             
-            title.textContent = item.title;
+        title.textContent = item.title;
 
-            // ----------
+        // ----------
             
-            link.appendChild(icon);
-            link.appendChild(title);
+        link.appendChild(icon);
+        link.appendChild(title);
 
-            container.appendChild(link);
-        });
+        container.appendChild(link);
+    });
+}
 
-    }).catch(error => console.error("Contents in " + file_to_read + " couldn't loaded!", error));
-});
+document.addEventListener("DOMContentLoaded", () => load_profiles());

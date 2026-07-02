@@ -1,7 +1,5 @@
 <!-- The files in this project have not minifed. -->
-
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -16,40 +14,185 @@
     <link rel="icon" href="/images/icons/favicon_64x.png" sizes="64x64">
     <link rel="icon" href="/images/icons/favicon_96x.png" sizes="96x96">
     <link rel="icon" href="/images/icons/favicon_128x.png" sizes="128x128">
-    
-    <title>Movansha - Personal website</title>
 
-    <!-- SEO -->
-    <meta name="robots" content="noindex">
+    <title data-i18n="head-title"></title>
+
+    <!-- SEO: -->
+
+    <meta name="author" content="Batuhan D.">
+    <meta name="description" content="Links to GitHub repositories of projects I've developed...">
 
     <!-- Open Graph: -->
     <meta property="og:image" content="https://movansha.com.tr/images/og-image.jpg">
     <meta property="og:url" content="https://movansha.com.tr">
 
-    <meta property="og:title" content="Movansha - Personal website">
+    <meta property="og:title" content="Movansha - Personal archive">
     <meta property="og:type" content="website">
 
     <!-- Twitter Card: -->
     <meta name="twitter:image" content="https://movansha.com.tr/images/og-image.jpg">
     
-    <meta name="twitter:title" content="Movansha - Personal website">
+    <meta name="twitter:title" content="Movansha - Personal archive">
     <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Design: -->
 
-    <!-- Load pages in different languages: -->
+    <link rel="stylesheet" href="/css/fonts.css">
+
+    <!-- Layouts: -->
+    <link rel="stylesheet" href="/css/layouts/navbar.css">
+    <link rel="stylesheet" href="/css/layouts/general.css">
+    
+    <link rel="stylesheet" href="/css/layouts/project-cards.css">
+    <link rel="stylesheet" href="/css/layouts/my-maps.css">
+    <link rel="stylesheet" href="/css/layouts/about-me.css">
+
+    <link rel="stylesheet" href="/css/layouts/footer.css">
+
+    <!-- Style and theme: -->
+    <link rel="stylesheet" href="/css/style/navbar.css">
+    <link rel="stylesheet" href="/css/style/my-maps.css">
+    <link rel="stylesheet" href="/css/style/general.css">
+
+    <link rel="stylesheet" href="/css/style/project-cards.css">
+    <link rel="stylesheet" href="/css/style/about-me.css">
+    
+    <link rel="stylesheet" href="/css/style/footer.css">
+
+    <script src="/js/load/theme.js"></script>
+
     <script>
-        if (location.pathname == "/" || location.pathname == "/index.html") {
-        const user_lang = navigator.language || navigator.user_lang;
-
-        if (user_lang.startsWith("tr")) window.location.replace("/tr/");
-        else window.location.replace("/en/");
-    }
+        if (!localStorage.getItem("lang")) {
+            const user_lang = navigator.language || navigator.user_lang;
+            localStorage.setItem("lang", user_lang);
+        }
     </script>
 </head>
 
-<body> 
-    <p style="text-align: center; font-size: 1.3rem;">
-        Redirecting...
-    </p>
+<body>
+    <nav class="navbar">
+        <a id="navbar-logo" href="#about-me">
+            <img src="/images/navbar/logo.webp" alt="Logo of Movansha">
+        </a>
+
+        <h1 id="navbar-header" data-i18n="navbar.header">
+        </h1>
+        
+        <button id="hamburger" data-i18n-title="title.menu">
+            <img src="/images/navbar/hamburger.webp" alt="Icon of menu">
+        </button>
+        
+        <!---->
+        
+        <hr>
+
+        <div id="menu">
+            <a href="#my-projects" data-i18n="navbar.projects"></a>
+            <a href="#my-maps" data-i18n="navbar.maps"></a>
+            <a href="#about-me" data-i18n="navbar.about-me"></a>
+
+            <a href="https://www.technopat.net/sosyal/uye/movansha.865030/articles" data-i18n="navbar.guides"></a>
+            <a href="https://github.com/Movansha" data-i18n="navbar.github"></a>
+        </div>
+
+        <script src="/js/navbar.js"></script>
+    </nav>
+
+    
+    <!-- Modifiers: -->
+
+    <div class="modifiers">
+        <button class="modifier-button" data-i18n-title="title.theme" onclick="switch_theme()">
+            <img draggable="false" id="theme-icon">
+        </button>
+
+        <button class="modifier-button" data-i18n-title="title.language" onclick="change_lang()">
+            <img draggable="false" id="lang-icon">
+        </button>
+    </div>
+
+
+    <!-- Container - my projects: -->
+    
+    <div class="main-container projects-container" id="my-projects">
+        <h1 data-i18n="header-my-projects"></h1>
+
+        <script src="/js/load/projects.js"></script>
+    </div>
+
+
+    <!-- Container - my custom maps: -->
+
+    <div class="main-container maps-container" id="my-maps">
+        <h1 data-i18n="custom-maps.header"></h1>
+
+        <img draggable="false" src="/images/turkiye-mulki-idare.webp" alt="Türkiye Mülki İdare Haritası">
+
+        <p data-i18n="custom-maps.description"></p>
+
+        <div class="downloads">
+            <span>
+                <p data-i18n="custom-maps.normal"></p>
+
+                <a draggable="true" id="download-jpg">
+                    <img draggable="false" src="/images/buttons/files/jpg.webp">
+                    <span data-i18n="custom-maps.download-jpg"></span>
+                </a>
+
+                <a draggable="true" id="download-pdf">
+                    <img draggable="false" src="/images/buttons/files/pdf.webp">
+                    <span data-i18n="custom-maps.download-pdf"></span>
+                </a>
+            </span>
+
+            <span>
+                <p data-i18n="custom-maps.transparent"></p>
+
+                <a draggable="true" id="download-png">
+                    <img draggable="false" src="/images/buttons/files/png.webp">
+                    <span data-i18n="custom-maps.download-png"></span>
+                </a>
+            </span>
+        </div>
+
+        <script src="/js/load/download-links.js"></script>
+    </div>
+
+
+    <!-- Container - about me: -->
+
+    <div class="main-container about-me-container" id="about-me">
+        <h1 data-i18n="about-me.header"></h1>
+
+        <div id="profile">
+            <a href="/images/batuhand.webp" target="_blank"> <img src="/images/batuhand.webp"> </a>
+            <p data-i18n="about-me.name"></p>
+        </div>
+
+        <div id="line"></div>
+
+        <div id="description">
+            <p data-i18n="about-me.description-1"></p>
+            <p data-i18n="about-me.description-2"></p>
+            <p data-i18n="about-me.description-3"></p>
+        </div>
+
+        <div id="links">
+            <script src="/js/load/profiles.js"></script>
+        </div>
+    </div>
+
+
+    <!-- Container - footer -->
+
+    <footer class="footer-container">
+        <p><b>2025 - Batuhan D.</b></p>
+        
+        <a href="https://github.com/Movansha/movansha.github.io" data-i18n="footer-repo-link"></a>
+    </footer>
+
+    <script src="/js/load/lang.js"></script>
+    <script src="/js/modifiers.js"></script>
 </body>
 
 </html>

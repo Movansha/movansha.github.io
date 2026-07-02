@@ -1,41 +1,54 @@
-document.addEventListener("DOMContentLoaded", () => {
+async function load_projects(lang) {
+    let file_to_read;
 
-    const file_to_read = "dynamic-items/projects.json";
+    if (lang.startsWith("tr")) {
+        file_to_read = "/contents/dynamic-items/projects_tr.json";
+    } else {
+        file_to_read = "/contents/dynamic-items/projects_en.json";
+    }
 
-    fetch(file_to_read).then(response => response.json())
-    .then(data => {
+    const response = await fetch(file_to_read);
+    const data = await response.json();
 
-        const container = document.querySelector(".projects-container");
+    // ----------
 
-        data.forEach(item => {
-            const card = document.createElement("a");
+    const container = document.querySelector(".projects-container");
+    const h1 = container.querySelector("h1");
+
+    container.replaceChildren();
+    if (h1) container.appendChild(h1);
+
+    data.forEach(item => {
+        const card = document.createElement("a");
             
-            const title = document.createElement("h1");
-            const icon = document.createElement("img");
-            const description = document.createElement("p");
+        const title = document.createElement("h1");
+        const icon = document.createElement("img");
+        const description = document.createElement("p");
 
-            // ----------
+        // ----------
+            
+        card.href = item.link;
+        card.target = "_blank";
+        card.draggable = "true";
 
-            card.href = item.link;
-            card.target = "_blank";
-            card.draggable = "true";
+        title.textContent = item.title;
 
-            title.textContent = item.title;
+        icon.src = item.icon;
+        icon.alt = "Project icon"
+        icon.draggable = false;
 
-            icon.src = item.icon;
-            icon.alt = "Project icon"
-            icon.draggable = false;
+        description.textContent = item.description;
 
-            description.textContent = item.description;
+        // ----------
 
-            // ----------
+        card.appendChild(title);
+        card.appendChild(icon);
+        card.appendChild(description);
 
-            card.appendChild(title);
-            card.appendChild(icon);
-            card.appendChild(description);
+        container.appendChild(card);
+    });
+}
 
-            container.appendChild(card);
-        });
+// ----------
 
-    }).catch(error => console.error("Contents in " + file_to_read + " couldn't loaded!", error));
-});
+document.addEventListener("DOMContentLoaded", () => load_projects(localStorage.getItem("lang")));

@@ -1,0 +1,55 @@
+{
+    "head-title": "Movansha - Kişisel arşiv",
+
+    "title": {
+        "menu": "Menü",
+        "theme": "Temayı değiştir",
+        "language": "View the page in English"
+    },
+
+    "navbar": {
+        "header": "Movansha",
+        "projects": "Projeler",
+        "maps": "Haritalar",
+        "about-me": "Hakkımda",
+        "guides": "Rehberlerim",
+        "github": "GitHub profilim"
+    },
+
+    "header-my-projects": "Projelerim",
+
+    "custom-maps": {
+        "header": "(Özel) Türkiye Haritası",
+
+        "description": [
+            "Coğrafi bölgeleri renklendirerek ve okunabilirliği artırarak",
+            "yüksek çözünürlüğe sahip bu haritayı hazırlamıştım.",
+            "Bu harita Türkiye'nin mülki idare bölümlerini gösterir.",
+            "Uzmanlarca hazırlanmamıştır."
+        ],
+
+        "normal": "Normal",
+        "transparent": "Şeffaf",
+
+        "download-jpg": "JPG olarak indir",
+        "download-pdf": "PDF olarak indir",
+        "download-png": "PNG olarak indir"
+    },
+
+    "about-me": {
+        "header": "¿Hakkımda?",
+        "name": "Batuhan D.",
+
+        "description-1": "Selamlar!",
+        "description-2": [
+            "Yazılım ya da web sitesi geliştirmek benim mesleğim değil.",
+            "Bir süre boyunca yazılım geliştiricisi olmayı istemiştim ama olmadı.",
+            "Daha sonrasında da sadece uğraşmayı sevdiğim için uygulama/site geliştiriyordum.",
+            "Artık ona da zaman ayıramıyorum. Bundan sonra bu web sitesini de (belki) bir arşiv olarak kullanırım.",
+            "Kullanmasam bile geçmişimin izlerini taşıyan bir ortam olarak kalır..."
+        ],
+        "description-3": "Bana ait diğer profillerin linklerine aşağıdan ulaşabilirsiniz."
+    },
+
+    "footer-repo-link": "Siteye ait GitHub deposuna gitmek için bu linke tıklayın"
+}
