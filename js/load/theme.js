@@ -18,16 +18,9 @@ function apply_theme(theme) {
 document.addEventListener("DOMContentLoaded", () => {
     let saved_theme = localStorage.getItem("theme");
 
-    if (saved_theme) {
-        apply_theme(saved_theme);
-    }
+    if (saved_theme) apply_theme(saved_theme);
     else {
-        if(window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
-            localStorage.setItem("theme", "dark");
-            apply_theme("dark");
-        } else {
-            localStorage.setItem("theme", "light");
-            apply_theme("light");
-        }
+        localStorage.setItem("theme", "dark");
+        apply_theme("dark");
     }
 });
