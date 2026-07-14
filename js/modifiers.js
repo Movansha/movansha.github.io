@@ -6,7 +6,16 @@ function switch_theme() {
 }
 
 function change_lang() {
-    let changed_lang = (localStorage.getItem("lang").startsWith("tr")) ? "en" : "tr";
+    let changed_lang;
+
+    if (localStorage.getItem("lang").startsWith("en")) {
+        changed_lang = "ru";
+    } else if (localStorage.getItem("lang").startsWith("ru")) {
+        changed_lang = "tr";
+    } else {
+        changed_lang = "en";
+    }
+
     localStorage.setItem("lang", changed_lang);
 
     load_projects(changed_lang);

@@ -3,7 +3,11 @@ async function load_projects(lang) {
 
     if (lang.startsWith("tr")) {
         file_to_read = "/contents/dynamic-items/projects_tr.json";
-    } else {
+    }
+    else if (lang.startsWith("ru")) {
+        file_to_read = "/contents/dynamic-items/projects_ru.json";
+    }
+    else {
         file_to_read = "/contents/dynamic-items/projects_en.json";
     }
 

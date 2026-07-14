@@ -4,11 +4,17 @@ async function load_lang(lang) {
 
     if (lang.startsWith("tr")) {
         lang_file = "/langs/tr.json";
-        lang_icon.src = "/images/buttons/usa.webp"
-        lang_icon.alt = "Türkiye flag"; 
-    } else {
-        lang_file = "/langs/en.json";
         lang_icon.src = "/images/buttons/turkiye.webp"
+        lang_icon.alt = "Türkiye flag"; 
+    }
+    else if (lang.startsWith("ru")) {
+        lang_file = "/langs/ru.json";
+        lang_icon.src = "/images/buttons/russia.webp"
+        lang_icon.alt = "Russian flag";
+    }
+    else {
+        lang_file = "/langs/en.json";
+        lang_icon.src = "/images/buttons/usa.webp"
         lang_icon.alt = "USA flag";
     }
 

@@ -3,20 +3,20 @@
         "link": "https://github.com/Movansha/remote-cmd-line",
         "title": "Remote Command Line",
         "icon": "/images/projects/rcl.webp",
-        "description": "Remote command line application for Windows"
+        "description": "Удалённая командная строки для Windows"
     },
 
     {
         "link": "https://github.com/Movansha/berry-clicker",
         "title": "Berry Clicker",
         "icon": "/images/projects/berry.webp",
-        "description": "Advanced auto clicker application for mice"
+        "description": "Приложение для автоматизации кликов мышью"
     },
 
     {
         "link": "https://github.com/Movansha/duck-dns-ip-updater",
         "title": "Duck DNS IP Updater",
         "icon": "/images/projects/ddiu.webp",
-        "description": "IPv4 and IPv6 addresses updater client"
+        "description": "Клиент для обновления IPv4- и IPv6-адресов"
     }
 ]

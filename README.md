@@ -7,6 +7,6 @@ The source files have not minified but images are converted to **"webp"** format
 ## Features
 
 > - **Light and dark color scheme**
-> - **Pages in Turkish and English languages**
+> - **Pages in English, Russian (Русский) and Turkish (Türkçe) languages**
 > - **Responsive design for the narrow or wide screens**
 > - **Dynamic client-side internationalization**
