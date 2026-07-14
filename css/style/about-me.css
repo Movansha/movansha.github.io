@@ -11,7 +11,7 @@
 }
 
 #profile > p {
-    font-family: "Encode Sans Light";
+    font-family: "Montserrat Light";
     font-size: 1.6rem;
 }
 
@@ -20,7 +20,7 @@
 #links > a {
     text-decoration: none;
     text-align: center;
-    font-family: "Encode Sans Regular";
+    font-family: "Montserrat Regular";
     font-size: 0.95rem;
 
     background-color: #eaeaea;

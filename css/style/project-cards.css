@@ -18,15 +18,16 @@
 .projects-container > a > h1 {
     text-align: center;
 
-    font-family: "Albert Sans Medium";
+    font-family: "Montserrat Medium";
     font-weight: normal;
-    font-size: 1.2rem;
+    font-size: 1.10rem;
 
     transition: color 175ms ease;
 }
 
 .projects-container > a > p {
     text-align: center;
+    font-size: 0.94rem;
 }
 
 @media (pointer: fine) {

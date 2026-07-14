@@ -9,9 +9,9 @@
 /* Content: */
 
 #navbar-header {    
-    font-family: "Encode Sans Medium";
+    font-family: "Montserrat Regular";
     font-weight: normal;
-    font-size: 1.3rem;
+    font-size: 1.25rem;
 
     border-bottom: 2px solid #9172c4;
 }
@@ -33,7 +33,7 @@
 #menu {
     background-color: #2e2833;
     
-    font-family: "Encode Sans Light";
+    font-family: "Montserrat Light";
 
     border: 2px outset #7e83c4;
     border-radius: 20px;
