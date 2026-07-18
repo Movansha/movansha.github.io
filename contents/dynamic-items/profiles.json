@@ -1,14 +1,20 @@
 [
     {
-        "link": "https://www.technopat.net/sosyal/uye/movansha.865030",
+        "link": "https://www.fragrantica.com/@movansha",
+        "icon": "/images/profiles/fragrantica.webp",
+        "title": "Fragrantica"
+    },
+
+    {
+        "link": "https://www.technopat.net/sosyal/uye/movansha.865030/",
         "icon": "/images/profiles/technopat.webp",
         "title": "Technopat"
     },
 
     {
-        "link": "https://www.fragrantica.com/member/2880832",
-        "icon": "/images/profiles/fragrantica.webp",
-        "title": "Fragrantica"
+        "link": "https://www.reddit.com/user/Movansha/",
+        "icon": "/images/profiles/reddit.webp",
+        "title": "Reddit"
     },
 
     {
