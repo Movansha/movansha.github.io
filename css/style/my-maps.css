@@ -1,7 +1,7 @@
 /* Containers: */
 
 .downloads > span {
-    background-color: #eaeaea;
+    background-color: #ebebeb;
 
     border: 1px solid #d9d2df;
     border-radius: 20px;
@@ -16,11 +16,11 @@
 /* Download links: */
 
 .downloads a {
-    background-color: #e9e9e9;
+    background-color: #ebebeb;
     color: #303030;
     text-decoration: none;
 
-    border: 1px solid #d9d2df;
+    border: 1px solid #d1c7da;
     border-radius: 500px;
 
     transition: box-shadow 400ms ease;
